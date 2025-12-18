@@ -1,2 +1,9 @@
-matn = input("Matn kiriting: ").lower()
-print(sum(matn.count(h) for h in "aeiou"))
+matn = input("Matn kiriting: ")
+unlilar = "aeiou"
+soni = 0
+
+for belgi in matn.lower():
+    if belgi in unlilar:
+        soni += 1
+
+print("Unli harflar soni:", soni)

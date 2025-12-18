@@ -1,8 +1,9 @@
-text = 'hello'
-   #01234
+matn = input("Matn kiriting: ")
+teskari = ""
+i = len(matn) - 1
 
-i = 0
-while i < len(text):
-    print(i, text[i])
+while i >= 0:
+    teskari += matn[i]
+    i -= 1
 
-    i += 1
+print("Teskari matn:", teskari)
